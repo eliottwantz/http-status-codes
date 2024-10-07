@@ -1,15 +1,31 @@
 {
   "name": "@develiott/http-status-codes",
-  "version": "1.0.0",
-  "description": "ABC",
+  "version": "0.0.1",
+  "description": "Simple, lightweight package that exports HTTP status codes and phrases. Nothing more",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "generate": "node generate.mjs",
     "build": "tsc"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "Eliott Wantz <dev.eliottdev@gmail.com> (https://develiott.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliottwantz/http-status-codes.git"
+  },
+  "keywords": [
+    "http",
+    "status codes"
+  ],
   "dependencies": {
     "typescript": "^5.6.2"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/eliottwantz/komp/issues"
+  },
+  "homepage": "https://github.com/eliottwantz/komp#readme",
+  "license": "MIT"
 }
