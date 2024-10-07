@@ -1,11 +1,11 @@
 {
-  "name": "http-status-codes",
+  "name": "@develiott/http-status-codes",
   "version": "1.0.0",
   "description": "ABC",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "generate": "node generate.mjs",
-    "build": "tsc http-status-codes.ts --outFile http-status-codes.js"
+    "build": "tsc"
   },
   "author": "",
   "license": "MIT",
