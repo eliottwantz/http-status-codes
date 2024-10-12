@@ -61,8 +61,12 @@ async function generateStatusCodes() {
     phrasesTsContent += `export const ${code.constant} = "${code.phrase}" as const;\n\n`;
   }
 
+  const modTsContext = `export * as HTTP_STATUS_CODES from "./codes.ts";
+export * as HTTP_STATUS_PHRASES from "./phrases.ts";`;
+
   await Deno.writeTextFile(TS_CODES_PATH, codesTsContent);
   await Deno.writeTextFile(TS_PHRASES_PATH, phrasesTsContent);
+  await Deno.writeTextFile("./dist/mod.ts", modTsContext);
 
   console.log(`TypeScript file ${TS_PHRASES_PATH} has been generated.`);
 }

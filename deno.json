@@ -1,9 +1,10 @@
 {
   "name": "@develiott/http-status-codes",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "exports": {
-    ".": "./dist/codes.ts",
+    ".": "./dist/mod.ts",
+    "./codes": "./dist/codes.ts",
     "./phrases": "./dist/phrases.ts"
   },
   "publish": {
