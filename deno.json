@@ -7,7 +7,7 @@
     "./phrases": "./dist/phrases.ts"
   },
   "publish": {
-    "exclude": ["!dist"]
+    "exclude": ["!dist", "main.ts", ".vscode"]
   },
   "tasks": {
     "build": "deno run -RWN main.ts",
