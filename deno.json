@@ -1,0 +1,13 @@
+{
+  "name": "@develiott/http-status-codes",
+  "license": "MIT",
+  "version": "0.0.1",
+  "exports": "./mod.ts",
+  "tasks": {
+    "gen": "deno run -RWN main.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/fs": "jsr:@std/fs@^1.0.4"
+  }
+}
